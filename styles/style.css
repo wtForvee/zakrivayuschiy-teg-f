@@ -17,7 +17,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  max-inline-size: 700px;
+  max-inline-size: 696px;
   color: var(--text-color);
   font-family: var(--enter, sans-serif);
   background-color: var(--background-color);
