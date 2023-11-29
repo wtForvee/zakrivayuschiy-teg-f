@@ -12,3 +12,108 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes pointer-moving {
+    0% {
+      inset-inline-start: -20px;
+    }
+    100% {
+      inset-inline-start: -16px;
+    }
+  }
+  
+.sparks {
+    opacity: 0;
+  }
+
+.like-icon .core {
+    fill: var(--background-color);
+    transition: fill 0.3s;
+    transition-timing-function: linear;
+}
+
+.like-icon:hover .core {
+    fill: var(--accent-color);
+}
+
+.like-icon:active .core {
+    fill: var(--heart-fill);
+}
+
+.like-icon .main-body {
+    fill: var(--background-color);
+    transition: fill 0.3s;
+    transition-delay: 0.05s;
+    transition-timing-function: linear;
+}
+
+.like-icon:hover .main-body {
+    fill: var(--accent-color);
+}
+
+.like-icon:active .main-body {
+    fill: var(--heart-fill);
+}
+
+.like-icon.is-liked .core {
+    fill: var(--heart-fill);
+    transition: fill 0.3s;
+}
+
+.like-icon.is-liked .main-body {
+    fill: var(--heart-fill);
+    transition: fill 0.3s;
+}
+
+.like-icon.is-liked .contour {
+    fill: var(--heart-fill);
+    transition-delay: 0.06s;
+    transition: fill 0.3s;
+}
+
+.like-icon.is-liked {
+    animation-name: heart-scaling;
+    animation-duration: 0.3s;
+    animation-delay: 0.1s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+}
+
+@keyframes heart-scaling {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+  }
+
+.like-icon.is-liked .sparks {
+    animation-name: sparks-scaling;
+    animation-duration: 0.3s;
+    animation-delay: 0.3s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+}
+
+@keyframes sparks-scaling {
+    0% {
+        opacity: 0;;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+
+
+/* .like-icon .contour {
+    fill: var(--heart-contour);
+    transition: fill 0.3s;
+    transition-delay: 0.05s;
+    transition-timing-function: linear;
+}
+
+.like-icon:active .contour {
+    fill: var(--heart-fill);
+} */

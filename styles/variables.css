@@ -1,1 +1,25 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --enter: 'Enter';
+    --pressStart2p: 'Press Start 2P';
+    --wgth: 400;
+    --wgth: 465;
+    --wgth: 700;
+    --wgth: 785;
+    --border-color: #000000;
+    --text-color: #000000;
+    --text-button-color: #FFFFFF;
+    --text-shadow: #FFFFFF;
+    --accent-color: #000000;
+    --shadow-color: #000000;
+    --heart-fill: #FF0000;
+    --heart-contour: #000000;
+    --background-color: #FFFFFF;
+    --backdrop-color: #000000;
+    --background-image:
+    repeating-linear-gradient(to right, #d3d3d3 0px 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0px 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+}
+
+
