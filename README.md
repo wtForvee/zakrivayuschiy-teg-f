@@ -1,1 +1,0 @@
-https://github.com/wtForvee/zakrivayuschiy-teg-f.git
