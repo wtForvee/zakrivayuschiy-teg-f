@@ -17,6 +17,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  max-inline-size: 700px;
   color: var(--text-color);
   font-family: var(--enter, sans-serif);
   background-color: var(--background-color);
@@ -366,7 +367,7 @@ button {
   
   .modal {
     padding: 28px 34px 28px 40px;
-    max-inline-size: 341px;
+    margin-inline: 17px;
   }
 
   .button-save {
