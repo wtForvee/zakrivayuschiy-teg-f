@@ -161,7 +161,7 @@ button {
   position: absolute;
   inset-inline-end: 25px;
   inset-block-start: 25px;
-  font-family: var(--pressStart2p, fantasy);;
+  font-family: var(--pressStart2p, fantasy);
   font-size: 14px;
   text-shadow: 
   -1px 0 var(--text-shadow),
@@ -377,5 +377,15 @@ button {
   .button__icon {
     block-size: 28px;
     inline-size: 28px;
+  }
+}
+
+@supports (
+  (-webkit-text-stroke: 1px var(--background-color)) or (text-stroke: 1px var(--background-color))
+) {
+  .card__label {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--background-color);
+    text-stroke: 1px var(--background-color);
   }
 }

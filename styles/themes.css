@@ -32,7 +32,7 @@
     --title-weight: 785;
     --border-color: #00CC14;
     --text-color: #00CC14;
-    --text-button-color: #00CC14; 
+    --text-button-color: #00CC14;
     --text-shadow: #000000;
     --accent-color: #00CC14;
     --shadow-color: #000000;
@@ -43,7 +43,7 @@
     --background-image:
     repeating-linear-gradient(to right, #000 0px 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, #000 0px 2px, transparent 2px 4px),
-    linear-gradient(to bottom, #007f0c, #004306); 
+    linear-gradient(to bottom, #007f0c, #004306);
 }
 
 @media (prefers-color-scheme: light) {
