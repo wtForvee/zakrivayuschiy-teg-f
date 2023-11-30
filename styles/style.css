@@ -410,11 +410,7 @@ button {
   } */
 
 
-}
-
-@supports (
-  (-webkit-text-stroke: 1px var(--background-color)) or (text-stroke: 1px var(--background-color))
-) {
+@supports ((-webkit-text-stroke: 1px var(--background-color)) or (text-stroke: 1px var(--background-color))) {
   .card__label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--background-color);
