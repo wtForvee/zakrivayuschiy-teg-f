@@ -53,7 +53,7 @@ button {
   margin-block: 100px;
   font-variation-settings: 'wght' var(--text-weight);
   max-inline-size: 700px;
-  margin-inline: auto;
+  /* margin-inline: auto; */
 }
 
 .header__link {
@@ -136,7 +136,7 @@ button {
   gap: 50px;
   padding-block-end: 105px;
   max-inline-size: 700px;
-  margin-inline: auto;
+  /* margin-inline: auto; */
 }
 
 .cards__list {
@@ -251,7 +251,7 @@ button {
 }
 
 .button-save {
-  padding: 14px 21px;
+  padding: 16px 21px;
   display: flex;
   gap: 8px;
 }
@@ -296,18 +296,6 @@ button {
   gap: 30px;
 }
 
-/* .modal__container {
-  display: flex;
-  flex-direction: column;
-  gap: 26px;
-}
-
-@media (width <= 375px) {
-  .modal__container {
-    gap: 28px;
-  }
-}
-
 .modal__wrapper {
   display: flex;
   gap: 22px;
@@ -323,15 +311,9 @@ button {
 
 .modal__text {
   text-transform: uppercase;
-    line-height: 1.5;
-    max-width: 234px;
-    width: 100%;
-}
-  
-@media (width <= 375px) {
-  .modal__text {
-    width: 80%;
-  }
+  line-height: 1.5;
+  max-width: 234px;
+  width: 100%;
 }
 
 .modal__icon {
@@ -339,43 +321,11 @@ button {
   height: 39px;
 }
 
-@media (width <= 375px) {
-  .modal {
-    padding: 32px 38px;
-  }
-}
-
-.modal__wrapper {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.modal__icon {
-  flex-shrink: 0;
-  inline-size: 39px;
-  block-size: 39px;
-}
-
-.modal__button {
-  inline-size: 100%;
-  padding: 9px 17px;
-  text-transform: uppercase;
-  line-height: 90%;
-}
-
-.modal__text {
-  text-transform: uppercase;
-  max-inline-size: 234px;
-  inline-size: 100%;
-  line-height: 150%;
-} */ */
-
  @media (width <= 375px) {
   .header {
     padding-block-start: 120px;
   }
- }
+ 
   .card__label {
     inset-inline-end: 11px;
     inset-block-start: 25px;
@@ -401,6 +351,10 @@ button {
     text-transform: uppercase;
     line-height: 90%;
   }
+
+  .button-save {
+    flex-direction: column;
+  }
   
   .modal__icon {
     width: 39px;
@@ -411,15 +365,11 @@ button {
     max-inline-size: 80%
   }
 
-  .button-save {
-    flex-direction: column;
-    gap: 10px;
-  }
-
   .button__icon {
     block-size: 28px;
     inline-size: 28px;
   }
+ }
 
 @supports ((-webkit-text-stroke: 1px var(--background-color)) or (text-stroke: 1px var(--background-color))) {
   .card__label {
