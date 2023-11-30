@@ -296,7 +296,7 @@ button {
   gap: 30px;
 }
 
-.modal__container {
+/* .modal__container {
   display: flex;
   flex-direction: column;
   gap: 26px;
@@ -343,10 +343,9 @@ button {
   .modal {
     padding: 32px 38px;
   }
-
 }
 
-/* .modal__wrapper {
+.modal__wrapper {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -370,13 +369,13 @@ button {
   max-inline-size: 234px;
   inline-size: 100%;
   line-height: 150%;
-} */
+} */ */
 
-/* @media (width < 376px) {
+ @media (width <= 375px) {
   .header {
     padding-block-start: 120px;
   }
-
+ }
   .card__label {
     inset-inline-end: 11px;
     inset-block-start: 25px;
@@ -390,6 +389,19 @@ button {
     padding: 32px 42px;
   }
 
+  .modal__wrapper {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+  }
+
+  .modal__button {
+    inline-size: 100%;
+    padding: 9px 17px;
+    text-transform: uppercase;
+    line-height: 90%;
+  }
+  
   .modal__icon {
     width: 39px;
     height: 39px;
@@ -407,8 +419,7 @@ button {
   .button__icon {
     block-size: 28px;
     inline-size: 28px;
-  } */
-
+  }
 
 @supports ((-webkit-text-stroke: 1px var(--background-color)) or (text-stroke: 1px var(--background-color))) {
   .card__label {
