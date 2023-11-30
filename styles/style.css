@@ -53,7 +53,7 @@ button {
   margin-block: 100px;
   font-variation-settings: 'wght' var(--text-weight);
   max-inline-size: 700px;
-  /* margin-inline: auto; */
+  margin-inline: auto;
 }
 
 .header__link {
@@ -136,7 +136,7 @@ button {
   gap: 50px;
   padding-block-end: 105px;
   max-inline-size: 700px;
-  /* margin-inline: auto; */
+  margin-inline: auto;
 }
 
 .cards__list {
