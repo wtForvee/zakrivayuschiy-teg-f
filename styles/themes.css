@@ -46,25 +46,25 @@
     linear-gradient(to bottom, #007f0c, #004306);
 }
 
-@media (prefers-color-scheme: light) {
-    :root.theme-light {
+@media (prefers-color-scheme: dark) {
+    :root {
         --enter: 'Enter';
         --pressStart2p: 'Press Start 2P';
-        --text-weight: 400;
-        --title-weight: 700;
-        --border-color: #000000;
-        --text-color: #000000;
-        --text-button-color: #FFFFFF;
-        --text-shadow: #FFFFFF;
-        --accent-color: #000000;
+        --text-weight: 465;
+        --title-weight: 785;
+        --border-color: #00CC14;
+        --text-color: #00CC14;
+        --text-button-color: #00CC14;
+        --text-shadow: #000000;
+        --accent-color: #00CC14;
         --shadow-color: #000000;
         --heart-fill: #FF0000;
-        --heart-contour: #000000;
-        --background-color: #FFFFFF;
+        --heart-contour: #00CC14;
+        --background-color: #000000;
         --backdrop-color: #000000;
         --background-image:
-        repeating-linear-gradient(to right, #d3d3d3 0px 2px, transparent 2px 4px),
-        repeating-linear-gradient(to bottom, #d3d3d3 0px 2px, transparent 2px 4px),
-        linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+        repeating-linear-gradient(to right, #000 0px 2px, transparent 2px 4px),
+        repeating-linear-gradient(to bottom, #000 0px 2px, transparent 2px 4px),
+        linear-gradient(to bottom, #007f0c, #004306);
     }
 }

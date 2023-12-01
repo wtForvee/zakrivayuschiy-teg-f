@@ -276,7 +276,7 @@ button {
 /* modal */
 
 .modal {
-  font-family: var(--pressStart2p);
+  font-family: var(--pressStart2p, fantasy);
   font-size: 14px;
   padding: 30px 26px;
   line-height: 150%;
@@ -311,14 +311,15 @@ button {
 
 .modal__text {
   text-transform: uppercase;
-  line-height: 1.5;
-  max-width: 234px;
-  width: 100%;
+  line-height: 150%;
+  max-inline-size: 234px;
+  inline-size: 100%;
 }
 
 .modal__icon {
-  width: 39px;
-  height: 39px;
+  flex-shrink: 0;
+  inline-size: 39px;
+  block-size: 39px;
 }
 
  @media (width <= 375px) {
@@ -356,11 +357,6 @@ button {
     flex-direction: column;
   }
   
-  .modal__icon {
-    width: 39px;
-    height: 39px;
-  }
-
   .modal__text {
     max-inline-size: 80%
   }
